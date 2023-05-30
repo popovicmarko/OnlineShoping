@@ -30,19 +30,22 @@ export default function Navbar() {
         >
           <h2>PRODUCTS</h2>
         </NavLink>
-        <NavLink
-          to={"/cart"}
-          className={({ isActive }) =>
-            isActive ? "activeStyles" : "classicStyles"
-          }
-        >
-          <div className="cartIconContainer">
-            <ShoppingCartIcon className="cartIcon" />
-            {filteredCart.length > 0 && (
-              <div className="cartNumber">{filteredCart.length}</div>
-            )}
-          </div>
-        </NavLink>
+         
+            <NavLink
+              to={"/cart"}
+              className={({ isActive }) =>
+                isActive ? "activeStyles" : "classicStyles" 
+              } cart
+            >
+              <div className="cartIconContainer">
+                <ShoppingCartIcon className="cartIcon" />
+                {filteredCart.length > 0 && (
+                  <div className="cartNumber">{filteredCart.length}</div>
+                )}
+              </div>
+            </NavLink>
+        
+ 
         
       </div>
     </header>
