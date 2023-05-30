@@ -1,6 +1,6 @@
 .navbar {
   height: 15vh;
-  background-color: #2e5b36;
+  background-color: #26e348;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,6 +10,7 @@
   width: 18%;
   display: flex;
   justify-content: space-around;
+  margin-right: 2rem;
 }
 
 .logo {
@@ -31,4 +32,14 @@
   text-decoration: none;
   border-radius: 15px;
   color: #ffffff;
+}
+.cartNumber{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background-color: #d8ec81;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  
 }

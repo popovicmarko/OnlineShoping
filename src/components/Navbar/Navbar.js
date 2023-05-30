@@ -8,7 +8,6 @@ import { useContext } from "react";
 export default function Navbar() {
   const { cart } = useContext(AppContext);
   const filteredCart = cart.filter((e, i) => cart.indexOf(e.id) !== i);
-  console.log("filtrirani" + filteredCart.length);
   return (
     <header className="navbar">
       <NavLink to={"/"}>
@@ -24,7 +23,7 @@ export default function Navbar() {
           <h2>HOME</h2>
         </NavLink>
         <NavLink
-          to={"/shop"}
+          to={"/products"}
           className={({ isActive }) =>
             isActive ? "activeStyles" : "classicStyles"
           }
@@ -40,10 +39,11 @@ export default function Navbar() {
           <div className="cartIconContainer">
             <ShoppingCartIcon className="cartIcon" />
             {filteredCart.length > 0 && (
-              <div className="cartCounter">{filteredCart.length}</div>
+              <div className="cartNumber">{filteredCart.length}</div>
             )}
           </div>
         </NavLink>
+        
       </div>
     </header>
   );
