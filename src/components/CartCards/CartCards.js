@@ -14,6 +14,7 @@ export default function CartCards({
 
   return (
     <div className="cart-card">
+      <img className="product-image" src={productImage} alt={productName} />
       <div className="product-details">
         <div className="product-name-div">
           <h2 className="productName">{productName}</h2>

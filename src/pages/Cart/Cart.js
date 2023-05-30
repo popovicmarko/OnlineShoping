@@ -12,10 +12,6 @@ export default function Cart() {
     <>
       {cart.length !== 0 ? (
         <div className="cartCards">
-          {/* <p>producstii</p> */}
-          <h1 style={{ textAlign: "center", borderBottom: "1px solid green" }}>
-            Your cart
-          </h1>
           {cart.map((product) => (
             <CartCards
               key={product.id}
@@ -49,7 +45,7 @@ export default function Cart() {
           >
             <a
               style={{
-                color: "#ffffff",
+                color: "#d8ec81",
                 textDecoration: "none",
                 fontWeight: "700",
               }}
