@@ -76,32 +76,32 @@ function DodavanjeKreditneKartice() {
         {greske.brojKartice && <p>{greske.brojKartice}</p>}
         <br />
         <br />
+        <div className="wrap">
+          <label htmlFor="datum_isticanja">Datum ističanja:</label>
+          <input
+            type="text"
+            id="datum_isticanja"
+            value={datumIsticanja}
+            onChange={(e) => setDatumIsticanja(e.target.value)}
+            placeholder="MM/GG"
+            required
+          />
+          {greske.datumIsticanja && <p>{greske.datumIsticanja}</p>}
+          <br />
+          <br />
 
-        <label htmlFor="datum_isticanja">Datum ističanja:</label>
-        <input
-          type="text"
-          id="datum_isticanja"
-          value={datumIsticanja}
-          onChange={(e) => setDatumIsticanja(e.target.value)}
-          placeholder="MM/GG"
-          required
-        />
-        {greske.datumIsticanja && <p>{greske.datumIsticanja}</p>}
-        <br />
-        <br />
-
-        <label htmlFor="sigurnosni_kod">Sigurnosni kod:</label>
-        <input
-          type="text"
-          id="sigurnosni_kod"
-          value={sigurnosniKod}
-          onChange={(e) => setSigurnosniKod(e.target.value)}
-          required
-        />
-        {greske.sigurnosniKod && <p>{greske.sigurnosniKod}</p>}
-        <br />
-        <br />
-
+          <label htmlFor="sigurnosni_kod">Sigurnosni kod:</label>
+          <input
+            type="text"
+            id="sigurnosni_kod"
+            value={sigurnosniKod}
+            onChange={(e) => setSigurnosniKod(e.target.value)}
+            required
+          />
+          {greske.sigurnosniKod && <p>{greske.sigurnosniKod}</p>}
+          <br />
+          <br />
+        </div>
         <input type="submit" value="Dodaj karticu" />
       </form>
     </div>

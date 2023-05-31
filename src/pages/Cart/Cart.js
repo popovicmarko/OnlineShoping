@@ -4,12 +4,20 @@ import IconButton from "@mui/material/IconButton";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import { AppContext } from "../../context/AppContext";
 import CartCards from "../../components/CartCards/CartCards";
+import { NavLink } from "react-router-dom";
 
 export default function Cart() {
   const { cart } = useContext(AppContext);
 
   return (
     <>
+     <NavLink
+          to={"/ordering"}
+          className="orderingLink"
+        >
+          <h2>ORDERING</h2>
+        </NavLink>
+
       {cart.length !== 0 ? (
         <div className="cartCards">
           {cart.map((product) => (
@@ -22,6 +30,7 @@ export default function Cart() {
               quantity={product.quantityInCart}
             />
           ))}
+         
         </div>
       ) : (
         <div>

@@ -22,14 +22,7 @@ export default function Navbar() {
         >
           <h2>HOME</h2>
         </NavLink>
-        <NavLink
-          to={"/ordering"}
-          className={({ isActive }) =>
-            isActive ? "activeStyles" : "classicStyles"
-          }
-        >
-          <h2>ORDERING</h2>
-        </NavLink>
+        
         <NavLink
           to={"/products"}
           className={({ isActive }) =>
