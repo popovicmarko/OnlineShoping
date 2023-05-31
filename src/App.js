@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Homepage from "./pages/Homepage/Homepage";
 import Products from "./pages/Products/Products";
 import Cart from "./pages/Cart/Cart";
+import Ordering from "./pages/Ordering/Ordering";
 import { Toaster } from "react-hot-toast";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="/products" element={<Products />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/ordering" element={<Ordering />} />
         </Routes>
       </main>
       <Footer />

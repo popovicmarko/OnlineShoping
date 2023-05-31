@@ -1,5 +1,6 @@
 import React from "react";
 import "./Homepage.css";
+import Ordering from "../Ordering/Ordering";
 
 export default function Homepage() {
   return (
