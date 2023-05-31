@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./FormCart.css";
 
 function DodavanjeKreditneKartice() {
   const [imeNaKartici, setImeNaKartici] = useState("");
@@ -49,7 +50,7 @@ function DodavanjeKreditneKartice() {
   };
 
   return (
-    <div>
+    <div className="container">
       <h2>Dodavanje kreditne kartice</h2>
       <form onSubmit={handleSubmit}>
         <label htmlFor="ime">Ime na kartici:</label>
