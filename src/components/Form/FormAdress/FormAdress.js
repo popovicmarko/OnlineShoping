@@ -19,9 +19,12 @@ const OrderForm = () => {
     };
 
     return (
-        <div className="form-container">
-            <form onSubmit={handleSubmit}>
-                <label>
+        <div className="Adresscontainer">
+
+            <form className='formAdress' onSubmit={handleSubmit}>
+                 <h2>Dodacnje Adrese</h2>
+
+                <label className='label'>
                     Ime:
                     <input
                         type="text"
@@ -29,7 +32,7 @@ const OrderForm = () => {
                         onChange={(e) => setName(e.target.value)}
                     />
                 </label>
-                <label>
+                <label className='label'>
                     Email:
                     <input
                         type="email"
@@ -37,7 +40,7 @@ const OrderForm = () => {
                         onChange={(e) => setEmail(e.target.value)}
                     />
                 </label>
-                <label>
+                <label className='label'>
                     Adresa:
                     <input
                         type="text"
@@ -45,7 +48,7 @@ const OrderForm = () => {
                         onChange={(e) => setAddress(e.target.value)}
                     />
                 </label>
-                <label>
+                <label className='label'>
                     Poštanski kod:
                     <input
                         type="text"

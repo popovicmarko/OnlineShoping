@@ -11,12 +11,7 @@ export default function Cart() {
 
   return (
     <>
-     <NavLink
-          to={"/ordering"}
-          className="orderingLink"
-        >
-          <h2>ORDERING</h2>
-        </NavLink>
+    
 
       {cart.length !== 0 ? (
         <div className="cartCards">
@@ -30,8 +25,14 @@ export default function Cart() {
               quantity={product.quantityInCart}
             />
           ))}
-         
+           <NavLink
+          to={"/ordering"}
+          className="orderingLink"
+        >
+          <h2>ORDERING</h2>
+        </NavLink>
         </div>
+        
       ) : (
         <div>
           <div
