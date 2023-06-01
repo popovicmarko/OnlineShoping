@@ -10,7 +10,7 @@ const OrderForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(name, email, address, postalCode);
-        
+
         setName('');
         setEmail('');
         setAddress('');
@@ -24,11 +24,12 @@ const OrderForm = () => {
                  <h2>Dodacnje Adrese</h2>
 
                 <label className='label'>
-                    Ime:
+                    Ime i Prezime:
                     <input
                         type="text"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
+                        required
                     />
                 </label>
                 <label className='label'>
@@ -37,6 +38,7 @@ const OrderForm = () => {
                         type="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
+                        required
                     />
                 </label>
                 <label className='label'>
@@ -45,6 +47,7 @@ const OrderForm = () => {
                         type="text"
                         value={address}
                         onChange={(e) => setAddress(e.target.value)}
+                        required
                     />
                 </label>
                 <label className='label'>
@@ -53,9 +56,12 @@ const OrderForm = () => {
                         type="text"
                         value={postalCode}
                         onChange={(e) => setPostalCode(e.target.value)}
+                        required
                     />
                 </label>
-                <button type="submit">Dodaj Adresu</button>
+                <div className="button">
+                     <button type="submit">Dodaj Adresu</button>
+                </div>
             </form>
         </div>
     );

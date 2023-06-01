@@ -77,7 +77,7 @@ function DodavanjeKreditneKartice() {
         <br />
         <br />
         <div className="wrap">
-          <label htmlFor="datum_isticanja">Datum ističanja:</label>
+          <label htmlFor="datum_isticanja">Datum isticanja:</label>
           <input
             type="text"
             id="datum_isticanja"
@@ -102,7 +102,9 @@ function DodavanjeKreditneKartice() {
           <br />
           <br />
         </div>
-        <input type="submit" value="Dodaj karticu" />
+        <div className="button">
+          <input type="submit" value="Dodaj karticu" />
+        </div>
       </form>
     </div>
   );
