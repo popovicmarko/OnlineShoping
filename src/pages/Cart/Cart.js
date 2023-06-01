@@ -29,7 +29,7 @@ export default function Cart() {
           to={"/ordering"}
           className="orderingLink"
         >
-          <h2>ORDERING</h2>
+          <h2>ORDER</h2>
         </NavLink>
         </div>
         

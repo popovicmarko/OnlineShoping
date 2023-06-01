@@ -9,9 +9,8 @@ const OrderForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Ovde možete izvršiti željenu logiku za online poručivanje, kao što je slanje podataka na server
-
-        // Resetovanje polja nakon poručivanja
+        console.log(name, email, address, postalCode);
+        
         setName('');
         setEmail('');
         setAddress('');

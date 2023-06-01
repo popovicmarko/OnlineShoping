@@ -29,7 +29,7 @@ function DodavanjeKreditneKartice() {
     }
 
     if (Object.keys(novaGreska).length === 0) {
-      // Nema grešaka, možete obraditi podatke ili poslati na server
+      
       console.log("Podaci kartice:", {
         imeNaKartici,
         brojKartice,
@@ -37,14 +37,14 @@ function DodavanjeKreditneKartice() {
         sigurnosniKod,
       });
 
-      // Resetovanje forme nakon slanja
+    
       setImeNaKartici("");
       setBrojKartice("");
       setDatumIsticanja("");
       setSigurnosniKod("");
       setGreske({});
     } else {
-      // Postoje greške, postavite ih u stanje greske
+      
       setGreske(novaGreska);
     }
   };
