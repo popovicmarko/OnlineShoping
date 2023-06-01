@@ -2,6 +2,7 @@ import React from "react";
 import "./Ordering.css";
 import FormCart from "../../components/Form/FormCart/FormCart";
 import FormAdress from "../../components/Form/FormAdress/FormAdress";
+import Total from "../../components/Total/Total";
 
 export default function Ordering() {
     return (
@@ -11,6 +12,7 @@ export default function Ordering() {
                 <FormCart />
                 <FormAdress />
             </div>
+            <Total />
         </div>
 
     );
