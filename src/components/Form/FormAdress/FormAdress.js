@@ -21,7 +21,7 @@ const OrderForm = () => {
         <div className="Adresscontainer">
 
             <form  className='formAdress' onSubmit={handleSubmit}>
-                 <h2>Dodacnje Adrese</h2>
+                 <h2>Dodavanje Adrese</h2>
 
                 <label className='label'>
                     Ime i Prezime:
