@@ -7,7 +7,6 @@ import Total from "../../components/Total/Total";
 export default function Ordering() {
     return (
         <div className="cointener">
-            <h1>Ordering</h1>
             <div className="order-container">
                 <FormCart />
                 <FormAdress />

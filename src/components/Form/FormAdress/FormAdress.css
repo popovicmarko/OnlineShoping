@@ -2,7 +2,12 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 50%;
-  padding: 20px;
+  padding: 40px;
+}
+.formAdress{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 input[type="email"] {
   padding: 10px;
@@ -17,6 +22,7 @@ button[type="submit"] {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  width: max-content;
 }
 label{
   display: flex;

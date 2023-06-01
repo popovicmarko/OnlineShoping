@@ -21,7 +21,7 @@ const OrderForm = () => {
     return (
         <div className="Adresscontainer">
 
-            <form className='formAdress' onSubmit={handleSubmit}>
+            <form  className='formAdress' onSubmit={handleSubmit}>
                  <h2>Dodacnje Adrese</h2>
 
                 <label className='label'>
@@ -56,7 +56,7 @@ const OrderForm = () => {
                         onChange={(e) => setPostalCode(e.target.value)}
                     />
                 </label>
-                <button type="submit">Poruči</button>
+                <button type="submit">Dodaj Adresu</button>
             </form>
         </div>
     );
