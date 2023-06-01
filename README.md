@@ -1,6 +1,6 @@
 ﻿# Online Shopping Platform
 This is the Readme file for the Online Shopping platform. This platform is a frontend application developed using React library. It allows users to browse products, add them to the cart, and complete purchases.<br />
-You can view the demo version of the platform at onlineshoping.pages.dev
+You can view the demo version of the platform at https://onlineshoping.pages.dev/
 
 
 ## Technologies
