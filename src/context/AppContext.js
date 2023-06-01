@@ -122,6 +122,13 @@ function ContextProvider({ children }) {
     }
   };
 
+  const calculateTotalPrice = () => {
+    return cart.reduce((total, product) => {
+      const productPrice = product.price * product.quantityInCart;
+      return total + productPrice;
+    }, 0);
+  };
+
   const values = {
     products,
     setProducts,
@@ -130,6 +137,7 @@ function ContextProvider({ children }) {
     deleteFromCart,
     increase,
     decrease,
+    calculateTotalPrice
   };
   return <AppContext.Provider value={values}>{children}</AppContext.Provider>;
 }
