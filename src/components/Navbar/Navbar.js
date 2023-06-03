@@ -14,6 +14,14 @@ export default function Navbar() {
         <img src={logo} alt="logo" className="logo" />
       </NavLink>
       <div className="links">
+      <NavLink
+          to={"/OnSale"}
+          className={({ isActive }) =>
+            isActive ? "activeStyles" : "classicStyles"
+          }
+        >
+          <h2>OnSale</h2>
+        </NavLink>
         <NavLink
           to={"/"}
           className={({ isActive }) =>

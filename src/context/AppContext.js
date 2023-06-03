@@ -6,6 +6,9 @@ const AppContext = createContext();
 
 function ContextProvider({ children }) {
   const [products, setProducts] = useState(productsJSON);
+  const [onSaleProducts] = useState(
+    products.filter((product) => product.quantity > 20)
+  );
   const [cart, setCart] = useState([]);
 
   const addToCart = (id) => {
@@ -122,13 +125,6 @@ function ContextProvider({ children }) {
     }
   };
 
-  const calculateTotalPrice = () => {
-    return cart.reduce((total, product) => {
-      const productPrice = product.price * product.quantityInCart;
-      return total + productPrice;
-    }, 0);
-  };
-
   const values = {
     products,
     setProducts,
@@ -137,7 +133,7 @@ function ContextProvider({ children }) {
     deleteFromCart,
     increase,
     decrease,
-    calculateTotalPrice
+    onSaleProducts,
   };
   return <AppContext.Provider value={values}>{children}</AppContext.Provider>;
 }
