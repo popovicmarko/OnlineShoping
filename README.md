@@ -11,7 +11,7 @@ HTML <br />
 CSS <br />
 JavaScript <br />
 ## Running the Project
-To run the project on your computer, follow these steps: <br />
+To run the project on your computer, follow these steps: <br /> 
 
 Clone this GitHub repository to your local machine.
 
