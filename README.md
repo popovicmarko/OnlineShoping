@@ -8,7 +8,7 @@ This platform is developed using the following technologies: <br />
 
 React <br />
 HTML <br />
-CSS <br />
+CSS <br /> 
 JavaScript <br />
 ## Running the Project
 To run the project on your computer, follow these steps: <br /> 
